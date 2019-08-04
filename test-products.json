@@ -1,0 +1,15 @@
+{
+  "Product_Items" : [ 
+    {
+      "order" : "6",
+      "key" : "Example",
+      "name" : "Example Linux",
+      "version" : "0",
+      "profile" : "",
+      "cpe" : "cpe:1.0:o:example:linux:0:*:*:*:*:*:*:*",
+      "defect_tags" : "{\"key\":\"linux\"}",
+      "product_tags" : "{\"key\":\"example\"}"
+    }
+   ]
+}
+

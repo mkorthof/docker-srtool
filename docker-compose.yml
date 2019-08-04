@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: srtool:latest
+    command: bash -c "./bin/srt start webport=0.0.0.0:8000 && sleep infinity"
+    volumes:
+      - /var/lib/docker/volumes/srt.sqlite:/srtool/srt.sqlite
+      - srt_data:/srtool/data
+    ports:
+      - "8000:8000"
+volumes:
+  srt_sqlite:
+  srt_data:
